@@ -33,6 +33,7 @@ SecRule REQUEST_HEADERS:User-Agent "@pm BadBot MaliciousScanner Nikto" \
 * **Blocked Request** (User-Agent: BadBot): HTTP/1.1 403 Forbidden
 * **Blocked Request** (User-Agent: Nikto): HTTP/1.1 403 Forbidden
 
+**Terminal Verification (curl Output)**
 ![Normal vs blocked request](normalvsblockedrequest.png)
-
+**WAF Audit Log Evidence (Rule ID 100001)**
 ![Rule ID 100001](logrule.png)
